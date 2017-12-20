@@ -1,0 +1,34 @@
+HEL DEV: http://dev.hel.fi/apis/linked-events/#/
+JSON-LD tyypistä dataa
+oma luokka -> http json -> data objekteihin -> objektit näytölle
+kohde kartalla löytyy eventin locationin id linkin alta
+
+Muista
+- keyword pitää olla id haettaessa ei käy esim. "ruoka"
+- lopulliseen hakuun include=location jotta saadaan sijainti kartalle
+haku esim: http://www.designcaffeine.com/wp-content/uploads/2014/11/trip-advisor.jpg
+
+Arvosana 1:
+
+    x Käyttäjän täytyy pystyä hakemaan tapahtumia ajan paikan ja avainsanan perusteella,
+      data tulee näyttää ListViewissä (väh. 4 tapahtumaa)
+
+    x Filtteri -toiminto em., esim. paikka tai avainsana
+
+    x Kaikki adapterit oltava custom adaptereja
+
+    x Käyttäjän on pystyttävä tarkastelemaan tapahtuman tarkempia tietoja (oma activity varmaan paras)
+
+    x Avausaktiviteetti (splash screen)
+
+    x Toimintoaktiviteetti (opettajalle)
+
+Arvosana 2:
+
+    x Kartta-aktiviteetti (tapahtuman sijainti kartalla)
+
+Arvosana 3:
+
+    x Lisää tapahtuman kuvat lisätietoihin
+
+

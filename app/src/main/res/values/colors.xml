@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorAccent">#d3d3d3</color>
+    <!-- Splash Screen tausta -->
+    <color name="colorWhite">#ffffff</color>
+    <!-- Main Theme värit -->
+    <color name="mainYellow">#f3bc18</color>
+    <color name="mainLightBlue">#8747a8da</color>
+    <color name="mainBlue">#4a7ab7</color>
+    <color name="mainDarkerBlue">#3b6191</color>
+    <color name="mainDarkBlue">#132d60</color>
+    <color name="mainBlueBackground">#8f153779</color>
+    <color name="mainBlueForeground">#b3d5e3ff</color>
+    <color name="mainLightGrey">#7dc7c7c7</color>
+    <color name="mainGrey">#898989</color>
+</resources>

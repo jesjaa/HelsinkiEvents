@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Helsinki Events</string>
+    <string name="activity_title_search">Tarkka haku</string>
+    <string name="activity_title_details">Tarkemmat tiedot</string>
+    <string name="activity_title_gallery">Galleria</string>
+    <string name="activity_title_feature">Implemented Features</string>
+    <string name="search_string">Tarkennettu haku</string>
+    <string name="features_string">Lista toiminnoista</string>
+    <string name="nayta_tulokset">Näytä tulokset</string>
+    <string name="search_text">Hakusana (ei pakollinen)</string>
+    <string name="set_filters">Rajaa hakua</string>
+    <string name="filter_date_start"></string>
+    <string name="filter_date_end"></string>
+    <string name="save_places">Tallenna paikat</string>
+    <string name="by_start_date">Aloituspäivällä</string>
+    <string name="by_end_date">Päättymispäivällä</string>
+    <string name="by_keywords">Avainsanoilla</string>
+    <string name="set_keywords">Valitse avainsanat</string>
+    <string name="by_places">Paikoittain</string>
+    <string name="set_places">Valitse paikat</string>
+    <string name="cancel">Peruuta</string>
+    <string name="detailed_info">Lisätiedot</string>
+    <string name="example_event">Esimerkki tapahtuma</string>
+    <string name="detailed_info_field">Lisätietokenttä</string>
+
+</resources>

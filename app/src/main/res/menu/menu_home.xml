@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Search -->
+    <item
+        android:id="@+id/search_item"
+        android:icon="@drawable/ic_action_search"
+        android:title="@string/search_string"
+        app:showAsAction="always">
+    </item>
+
+    <!-- Implemented features opettajalle -->
+    <item
+        android:id="@+id/features_item"
+        android:icon="@drawable/ic_action_features"
+        android:title="@string/features_string"
+        app:showAsAction="never">
+    </item>
+
+</menu>

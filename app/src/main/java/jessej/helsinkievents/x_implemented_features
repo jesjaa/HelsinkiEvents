@@ -1,0 +1,44 @@
+------------ID 1------------
+User must be able to search events based on event time, place and keyword. At least one keyword is mandatory.
+Show the data ListView or in RecyclerView. Show at least 4 fields of event in list.
+-tehty:
+    SearchActivityssä asetetaan hakusanat, ajat, avainsanat ja paikat ja haetaan niiden perusteella resultaktiviteetissä
+------------ID 2------------
+User must be able to search for keywords and places for filtering events. User probably doesn’t
+know the places/keywords, that’s why this feature is needed. User must be able to select
+somehow place/keyword he/she wants to use when searching for events.
+-tehty
+    Keyword- ja Place -aktiviteeteissä voidaan hakea filtterit ja lisätä ne hakuun "parametreiksi"
+------------ID 3------------
+All adapters used must be custom adapters
+-tehty
+    Kaikki applikaatiossa käytetyt adapterit on tehty käsin
+------------ID 4------------
+When user selects the event, he/she will be shown detailed information about the event.
+Show only textual fields (that seems to contain sensible information)
+-tehty
+    Käyttäjä pääsee käsiksi tapahtuman tarkempiin tietoihin napilla
+------------ID 5------------
+Show somehow location information of the event in the map
+-tehty
+    Tapahtuman paikkatiedot näkyy Google Maps kartassa DetailActivityn alareunassa
+------------ID 6------------
+Show somehow all images of the event.
+-tehty
+    Kuvia voi selata jos tapahtuman luoja on asettanut sille kuvia
+    Painamalla DetailActivityssä yläreunassa esiintyvää kuvaa pääsee selaamaan sen tapahtuman galleriaa (GalleryActivityssä)
+------------ID 7------------
+User can browse ALL events. Note that there will be more than 30000 events so it is not possible to show them all. You must use RecyclerView.
+-ei tehty tai oikeastaan osittain tehty koska käytin ratkaisussa pelkkää constrainlayoutia ja listviewiä
+    Käyttäjä voi selata kaikkia tapahtumia hakemalla tapahtumia ilman hakusanoja ja hakuehtoja
+    detailactivityssä selaamalla viimeiseen ruudulla näkyvään tapahtumaan asti, sen jälkeen se alkaa lataamaan lisää tapahtumia
+    ja niin se tekee kunnes tapahtumat loppuu tietolähteestä
+------------ID 8------------
+Application must show splash screen when the application starts. In that screen show your name for few seconds.
+-tehty
+    Applikaatio alkaa 2,5 sekunnin pituisella avausnäytöllä jossa näkyy applikaation nimi ja tekijä
+------------ID 9------------
+Application must contain a view which describes the implemented features
+-tehty
+    Tätä samaa tekstiä pääsee selaamaan tiedostoista ja applikaation app barista alkunäytössä
+    (oikealla kolme pistettä ja valitse "Lista toiminnoista")

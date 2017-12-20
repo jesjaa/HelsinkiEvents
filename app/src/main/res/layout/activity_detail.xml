@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clDetailParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jessej.helsinkievents.DetailActivity">
+
+    <ProgressBar
+        android:id="@+id/pbDetail"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/clDetailChild" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/clDetailChild"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/glDetailH0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.13" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/glDetailH1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.32" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/glDetailH2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.72" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/glDetailH3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.90" />
+
+        <ImageView
+            android:id="@+id/ivEventFirstImage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/glDetailH1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/screen_background_dark_transparent" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/clTitleBackground"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/common_google_signin_btn_text_light_focused"
+            app:layout_constraintBottom_toTopOf="@+id/glDetailH0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvEventTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="4dp"
+                android:text="21.12.2017 - 01.01.2018"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvEventTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Some event here"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvEventTime" />
+        </android.support.constraint.ConstraintLayout>
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mvEventPosition"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/glDetailH2" />
+
+        <ScrollView
+            android:id="@+id/svEventDetailScroll"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintBottom_toTopOf="@+id/mvEventPosition"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivEventFirstImage">
+
+            <TextView
+                android:id="@+id/tvLongDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta tortor sed odio dapibus, quis pharetra velit viverra. Sed tincidunt tempor enim, in suscipit arcu facilisis vel. Aenean eget lacinia nibh. Curabitur vehicula sem imperdiet interdum aliquet. Nam elit mi, placerat eget sem in, finibus cursus quam. Fusce egestas quam a odio varius, vitae aliquet nunc iaculis. Nam ut ex dictum, interdum augue vel, posuere nibh. Maecenas at dolor massa. Aenean lectus mauris, consequat in ullamcorper quis, ullamcorper vitae enim. Ut nibh diam, blandit ut tellus id, ornare suscipit lacus. Morbi eget viverra tellus. Ut ut tempus leo. Quisque rhoncus accumsan commodo. Interdum et malesuada fames ac ante ipsum primis in faucibus. "
+                app:layout_constraintBottom_toTopOf="@+id/mvEventPosition"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivEventFirstImage" />
+        </ScrollView>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
